@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="col-6">
     <table class="table">
-      <thead>
+      <thead class="table-header">
         <tr>
           <th class="h4">#</th>
           <th class="h4">Marca</th>
@@ -10,10 +10,13 @@
         </tr>
       </thead>
       <tbody>
+        <tr *ngFor="let vehiculo of vehiculos">
+          <td class="bold"><dd>{{vehiculo.id}}</dd></td>
+          <td><dd>{{vehiculo.marca}}</dd></td>
+          <td><dd>{{vehiculo.linea}}</dd></td>
+          <td><dd>{{vehiculo.modelo}}</dd></td>
+        </tr>
       </tbody>
     </table>
-  </div>
-  <div class="row footer">
-    <a>Contact us: +57 3102105253 - info@tusegundazo.com - @tusegunazo</a>
   </div>
 </div>
