@@ -1,22 +1,37 @@
 <div class="container-fluid">
-  <div class="col-6">
-    <table class="table">
-      <thead class="table-header">
-        <tr>
-          <th class="h4">#</th>
-          <th class="h4">Marca</th>
-          <th class="h4">Línea</th>
-          <th class="h4">Modelo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let vehiculo of vehiculos">
-          <td class="bold"><dd>{{vehiculo.id}}</dd></td>
-          <td><dd>{{vehiculo.marca}}</dd></td>
-          <td><dd>{{vehiculo.linea}}</dd></td>
-          <td><dd>{{vehiculo.modelo}}</dd></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="row">
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-header">
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Marca</th>
+            <th class="h4">Línea</th>
+            <th class="h4">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehiculo of vehiculos">
+            <td class="bold">
+              <dd>{{vehiculo.id}}</dd>
+            </td>
+            <td>
+              <dd>{{vehiculo.marca}}</dd>
+            </td>
+            <td>
+              <dd>{{vehiculo.linea}}</dd>
+            </td>
+            <td>
+              <dd>{{vehiculo.modelo}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
+  <br>
+  <div class="row" *ngFor="let marca of marcas">
+    <a>Total {{marca}}: {{carrosPorMarca(marca)}}</a>
+  </div>
+
 </div>
