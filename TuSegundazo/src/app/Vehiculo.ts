@@ -11,7 +11,6 @@ export class Vehiculo {
         this.imagen = imagen;
     
     }
-    
     id: number;
     marca: string;
     linea: string;
