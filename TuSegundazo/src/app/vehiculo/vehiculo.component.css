@@ -21,3 +21,8 @@ table tr .bold {
     font-size: 18px;
     font-style: normal;
 }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+{
+    padding-top: 20px;
+}
